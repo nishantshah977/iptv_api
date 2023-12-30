@@ -18,6 +18,7 @@ for (let i = 1; i < splited_list.length; i++) {
 }
 
 app.get('/', (req, res) => {
+ res.setHeader('Content-Type', 'application/json');
   res.json(cleaned_list);
 });
 })
